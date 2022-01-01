@@ -6,7 +6,7 @@ import App from './App'
 import { ApolloProvider } from 'react-apollo'
 import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
-import { ApolloCache } from 'apollo-cache'
+import { InMemoryCache } from 'apollo-cache-inmemory'
 
 const link = createHttpLink({
   uri: 'http://localhost:3000/graphql'
@@ -14,7 +14,7 @@ const link = createHttpLink({
 
 const client = new ApolloClient({
   link: link,
-  cache: new ApolloCache()
+  cache: new InMemoryCache()
 })
 
 ReactDOM.render(
