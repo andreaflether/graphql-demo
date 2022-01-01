@@ -1,24 +1,49 @@
-# README
+# GraphQL Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Backend application for a GraphQL simple demo.
 
-Things you may want to cover:
+From [How To Use GraphQL with Ruby on Rails - Part 1 - Backend](https://www.youtube.com/watch?v=kSlJH3hrV58) by Andy Leverenz
 
-* Ruby version
+### Users
+```
+{
+  users {
+    name,
+    email,
+    username,
+    postsCount
+  }
+}
+```
 
-* System dependencies
+### User
+```
+{
+  user(id: 1) {
+    id
+    name
+    email
+    username
+    postsCount
+  }
+}
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Create User
+```
+mutation {
+ createUser(input: {
+   name: "User",
+   email: "user@user.com",
+   username: "user"
+ }) {
+   user {
+     id,
+     name,
+     email,
+     username
+   }
+   errors
+ }
+}
+```
