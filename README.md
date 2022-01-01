@@ -1,8 +1,8 @@
 # GraphQL Demo
 
-## Backend application for a GraphQL simple demo.
+## Ruby on Rails with GraphQL and React/Apollo simple demo.
 
-From [How To Use GraphQL with Ruby on Rails - Part 1 - Backend](https://www.youtube.com/watch?v=kSlJH3hrV58) by Andy Leverenz
+From [How To Use GraphQL with Ruby on Rails - Part 1 - Backend](https://www.youtube.com/watch?v=kSlJH3hrV58) and [How To Use GraphQL with Ruby on Rails - Part 2 - React Apollo Frontend](https://www.youtube.com/watch?v=TOq86ozyHIA) by Andy Leverenz
 
 ### Users
 ```
